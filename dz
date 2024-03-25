@@ -1,0 +1,858 @@
+# list_ = [20, 10, 20, 1, 100] 
+# min_number = list_[0] 
+# for i in range(len(list_)): 
+    # if list_[i] < min_number: 
+        # min_number=list_[i] 
+        # 
+# print(min_number)
+
+
+# tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita')]
+# cleared_tuples = [] 
+# for i in tuples: 
+    # if len(i)>0: cleared_tuples.append(i) 
+# print(cleared_tuples)
+
+# list1 = [1,2,3]
+# list2 = [4,5,6]
+# print (sum(list1+list2))
+
+
+# list_ = ['world', 'hello'] 
+# new_list = [list_[1], 
+# list_[0]] 
+# print(new_list)
+
+# list_ = [1, 2, 3, 4, 5] 
+# new_list= ['четное' if i %2 == 0 
+# else 'нечетное' for i in list_] 
+# print(new_list)
+
+
+# nums = [1, 2, 4, 9]
+# res = []
+# for i in nums:
+    # if i < 5:
+        # res.append(i)
+# print(res)
+
+
+# list_ = [8, 6, 8, 10, 8, 20, 10, 8, 8] 
+# number = 8 
+# count = 0 
+# for item in list_: 
+    # if item == number: count += 1 
+# print(count)
+
+
+# list_ = [1,1,3]
+# if len(list_) != len(set(list_)):
+    # print('yes') 
+# else:
+    # print('ERROR')
+    
+    
+# list_ = []
+# for x in range(54,9184):
+    # if x % 5 == 0:
+        # list_.append(x)
+# print(list_)
+
+
+# list1 = [1, 2, 3, 4, 5] 
+# list2 = [5, 6, 7, 8, 9] 
+# if any(item in list1 for item in list2): 
+    # print(True) 
+# else: 
+    # print(False)
+
+
+
+# size = 3 
+# list1 = [] 
+# for i in range(size): 
+    # list1.insert(i, list(range(1, size+1))) 
+# print(list1)
+
+
+
+# inp1 = input() 
+# inp2 = input() 
+# inp3 = input() 
+# inp4 = input() 
+# inp5 = input() 
+# list0 = [] 
+# list0.append(inp1) 
+# list0.append(inp2) 
+# list0.append(inp3) 
+# list0.append(inp4) 
+# list0.append(inp5) 
+# list1 = [] 
+# target = ' ' 
+# for i in list0: 
+    # t = i.find(target) 
+    # r = i.rfind(target) 
+    # if i.count(target) > 1: 
+        # list1.append(i[r+1:]) 
+    # else: 
+        # list1.append(i[t+1:]) 
+# print(sorted(list1))
+
+
+# name_of_friends = ['hello', 'world', 'python', 'makers', 'bootcamp'] 
+# for i in name_of_friends: 
+    # print(i)
+    
+
+# labels = ['honda', 'mazda']
+# for i in labels:
+    # print('I like brand ' + i)
+    
+
+# suitcase = []
+# suitcase.append('шорты')
+# suitcase.append('купальник')
+# suitcase.append('пиво')
+# suitcase.append('айка')
+# suitcase.append('майки')
+# suitcase.pop(-1)
+# suitcase.insert(0, 'водка')
+# print(suitcase)
+
+
+# num = input()
+# list_ = num.split(',')
+# tuple_ = tuple(num.split(','))
+# print(list_)
+# print(tuple_)
+
+
+# list_ = [1,2,3,4,5]
+# new_list = []
+# for elem in list_:
+    # new_list.append(str(elem))
+# print(new_list)
+
+
+# name_of_list = ['1234567'] 
+# new_list = name_of_list[0] 
+# i = len(new_list) 
+# if i%2==0: 
+    # new_list = name_of_list[0][i//2:] + name_of_list[0][:i//2] 
+# else: new_list = name_of_list[0][i//2+1:] + name_of_list[0][:i//2+1] 
+# print(list(new_list))
+
+# lists = [[1, 2, 3], [4, 5, 6], [10, 11, 12], [7, 8, 9]] 
+# max_ = max([x for x in lists], key = sum) 
+# print(max_)
+
+
+# list_ = [1, 'abcd', 3, '1', 4, 'xyz', 5, 'pqr', 7, 5, 12]
+# string = int(list_[3])
+# print(list_[3])
+
+
+# list_ = [1, 'abcd', 3, '1', 4, 'xyz', 5, 'pqr', 7, 5, 12] 
+# count = 0 
+# a = '' 
+# for i in list_: 
+    # if type (i) == int: 
+        # count = i + count 
+    # elif type(i) == str: 
+        # a = i 
+        # if a.isdigit(): 
+            # count = count + int(i) 
+# print(count)
+
+
+# a = {'x': 1, 'y': 2, 'z': 1}
+# print(list(a.keys())[0])
+
+
+# a = {'a': 1, 'b': 4, 'c': 1, 'd': 5, 'e': 6} 
+# b = {k: 2 
+# if v % 2 == 0 
+# else v for k, v in a.items()} 
+# print(b)
+
+
+# a = {'a': None, 'b': 1, 'c': 2, 'd': None, 'e': 3}
+# a = {key:value for (key, value) 
+# in a.items() 
+# if value} 
+# print(a)
+
+# a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
+# c = {} 
+# for k, v in a.items(): 
+    # b = v / 5 
+    # c.setdefault(k,b) 
+    # print(c)
+    
+
+# a = {'apple': 2, 'orange': 5, 'banana': 10} 
+# for k, v in list(a.items()): 
+    # if v % 2 == 0: 
+        # del a[k] 
+# print(a) 
+
+
+# a = {'a': 1, 'b': 2, 'c': 3} 
+# b = {} 
+# for k,v in a.items(): 
+    # b.setdefault(v,k) 
+# print(b)
+
+
+# dict_ = {'x': 1, 'y': 2, 'z': 1}
+# print(dict_.get('x'))
+
+
+# dict_ = {'a': 1, 'b': 2, 'c': 1}
+# del dict_['c']
+# print(dict_)
+
+
+# dict_ = {'a': 1, 'b': 2, 'c': 1}
+# print(dict_.items())
+
+# dict_ = {'a': 32, 'b': 56, 'c': 37, 'd': 21} 
+# b = {} 
+# for k,v in dict_.items(): 
+    # if 5 > 1: b.setdefault (v) 
+# print (max(b))
+
+
+
+# dict_ = {'a': 32, 'b': 56, 'c': 37, 'd': 21} 
+# min_val = min(dict_.values())
+# print(min_val)
+
+
+# list_ = ['Bootcamp', 'Makers', 'coding', 'hello']
+# dict_ = {}
+# for k in list_:
+    # dict_.setdefault(k, len(k))
+# print(dict_)
+
+
+
+# step = 3
+# 
+# list_ = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+# new_list = []
+# 
+# for iteration in range(step):
+    # inner_list = []
+# 
+    # for index in range(iteration, len(list_), step):
+        # inner_list.append(list_[index])
+# 
+    # new_list.append(inner_list)
+# 
+# print(new_list)
+
+
+# list_ = [i for i in range(1,51) if i % 2 == 1]
+# print(list_)
+
+
+# list_ = [x**2 if x % 2 == 0 else x for x in range(1,11)] 
+# print(list_)
+
+
+# dict_ = {
+    # 'Sasha': {
+        # 'likes': 23,
+        # 'comments': 2,
+        # 'rating': 4
+    # },
+    # 'Aliya': {
+        # 'likes': 34,
+        # 'comments': 5,
+        # 'rating': 5
+    # },
+    # 'Dasha': {
+        # 'likes': 15,
+        # 'comments': 3,
+        # 'rating': 2
+    # },
+    # 'Luna': {
+        # 'likes': 12,
+        # 'comments': 2,
+        # 'rating': 1
+    # },
+    # 'Rena': {
+        # 'likes': 26,
+        # 'comments': 7,
+        # 'rating': 2
+    # }
+# }
+# a = sum ({v['likes'] for k,v in dict_.items() if v['rating'] > 3})
+# print(a)
+
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# new_list = ['shorter' if len(x) <=4 else 'longer' for x in list_name]
+# print(new_list)
+
+
+# dict_ = {num : num ** 2 for num in range(1,11)}
+# print(dict_)
+
+
+# a = {'a': 1, 'b': 5, 'c': 4, 'd': 3}
+# dict_ = {k:list(range(v+1))[1:] for k,v in a.items()}
+# print(dict_)
+
+
+# dict_ = {'first': 1, 'secont':2, 'third': 3}
+# a = {k: 'odd' if v % 2!= 0 else 'even' for k,v in dict_.items()}
+# print(a)
+
+
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list1 = list(string_.split())
+# list_ = [x for x in list1 if x.isdigit()]
+# print(list_)
+
+
+# dict_ = {'Timur': {'history': 90, 'math': 95, 'literature': 91},
+# 'Olga': {'history': 92, 'math': 96, 'literature': 81},
+# 'Nik': {'history': 84, 'math': 85, 'literature': 87}}
+# new_dict = {x:max(y,key = lambda x:y.get(x)) for x,y in dict_.items()}
+# print(new_dict)
+
+
+# my_dict = {'first': {'a': 1}, 'second': {'b': 2}} 
+# dict_ = {k:y for k,v in my_dict.items() for x,y in v.items()}
+# print(dict_)
+
+
+# list_ = [x for x in range(1,26) if x % 2 == 0]
+# print(list_)
+
+
+# list_ = [-4, -3, -2, -1, 0, 1, 2, 3, 4] 
+# int_list = [x if x >= 0 else 1 for x in list_] 
+# print(int_list)
+
+
+# list1 = [1, 2, 'hello', 3, 'world', 4, 5, 'book', 'code', 6, 'Makers', 7, 8, 9, 10]
+# list2 = [x for x in list1 if type(x) == str]
+# print(list2)
+
+# list_ = [0, 3, 9, 7, 5, 2, 18, 4]
+# list1 = [x for x in list_ if x > 5]
+# print(list1)
+
+
+# list_ = [False, True, False, True, False, True, False, True, False, True] 
+# list1 = [1 if x == True else 0 for x in list_]
+# print(list1)
+
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# new_list = [len(x) for x in list_name]
+# print(new_list)
+
+
+# a = [x for x in range(1,1000,125) if x % 2 == 0]
+# print(a)
+
+
+# list1 = [44,54,64,74,104]
+# list2 = [x + 6 for x in list1]
+# print(list2)
+
+# 
+# list1 = [2, 4, 6, 8, 10, 12, 14]
+# new_list = [x for x in list1 if x ** 2 > 50]
+# print(new_list)
+
+
+# string = "happy birthday!" 
+# list1 = list(string) 
+# list_ = [x for x in list1 if x != ' ' and x != '!'] 
+# print(list_)
+
+
+# lict_ = {'a': {'d': 3, 'e': 45}, 'b': {'f': 23, 'j': 9}, 'c': {'h': 12, 'i': 89}}
+# list1 = [y for k,v in dict_.items() for x,y in v.items()]
+# print(list1)
+
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# a = {k:len(k) ** 2 for k in list_name if len(k) > 4}
+# print(a)
+
+
+
+# dict_ = {"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Miivan": 1600, "Vann": 2400, "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
+# list1 = [k.upper() for k,v in dict_.items() if 200 < v < 5000]
+# print(list1)
+
+
+# dict1 = {"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Miivan": 1600, "Vann": 2400, "Semi": 13600, "Bicycle": 7, "Motorcycle": 110} 
+# dict2 = {key.replace('i', ''):key.count('i') for key in dict1} 
+# print(dict2)
+
+
+# list1 = [1, 2, 3, 0, None, 'a', 'abc', [], 23, [1, 2, 3, 4], '', {'a': 1, 'b': 2}, 'drf', []]
+# list2 = [x for x in list1 if x]
+# print(list2)
+
+
+# SPL_Patrons = [
+# ['Kim Tremblay', 134],
+# ['Emily Wilson', 42],
+# ['Jessica Smith', 215],
+# ['Alex Roy', 151],
+# ['Sarah Khan', 105],
+# ['Samuel Lee', 220],
+# ['William Brown', 24],
+# ['Ayesha Qureshi', 199],
+# ['David Martin', 56],
+# ['Ajeet Patel',69]
+# ]
+# readers = [x[0] for x in SPL_Patrons if x[1] > 100]
+# print(readers)
+
+
+# SPL_Patrons = [
+# ['Kim Tremblay', 134],
+# ['Emily Wilson', 42],
+# ['Jessica Smith', 215],
+# ['Alex Roy', 151],
+# ['Sarah Khan', 105],
+# ['Samuel Lee', 220],
+# ['William Brown', 24],
+# ['Ayesha Qureshi', 199],
+# ['David Martin', 56],
+# ['Ajeet Patel',69]
+# ]
+# saved_amount = [round(x[1] * 11.95,2) for x in SPL_Patrons]
+# print(saved_amount)
+
+
+# prairie_pirates = [
+# ['Tractor Jack', 1000, True],
+# ['Plowshare Pete', 950, False],
+# ['Prairie Lily', 245, True],
+# ['Red River Rosie', 350, True],
+# ['Mad Athabasca McArthur', 842, False],
+# ['Assiniboine Sally', 620, True],
+# ['Thresher Tom', 150, True],
+# ['Cranky Canola Carl', 499, False]
+# ]
+# spisok = [[x[0], x[1] * 42] for x in prairie_pirates if x[2]==True] 
+# print(spisok)
+
+
+# dict_ = {
+    # 'Dasha': {
+        # 'likes': 15,
+        # 'comments': [
+            # {'id': 1, 'text': 'some text'},
+            # {'id': 2, 'text': 'some text'},
+        # ],
+        # 'rating': 2
+    # },
+    # 'Luna': {
+        # 'likes': 12,
+        # 'comments': [
+            # {'id': 1, 'text': 'some text'},
+            # {'id': 2, 'text': 'some text'},
+            # {'id': 3, 'text': 'some text'},
+        # ],
+        # 'rating': 1
+    # },
+    # 'Rena': {
+        # 'likes': 26,
+        # 'comments': [
+            # {'id': 1, 'text': 'some text'},
+            # {'id': 2, 'text': 'some text'},
+            # {'id': 3, 'text': 'some text'},
+            # {'id': 4, 'text': 'some text'},
+            # {'id': 5, 'text': 'some text'},
+            # {'id': 6, 'text': 'some text'},
+        # ],
+        # 'rating': 2
+    # }
+# }
+# id_list = [comment['id'] for data in dict_.values() for comment in data['comments'] if len(data['comments']) > 3] 
+# print(id_list)
+
+
+# list_ = [x/2 for x in range (0, 11) if x % 2 == 0] 
+# print(list_)
+
+
+# dict_ = {1:'asdd', 2:'hhjjjk', 3:'jshgd'} 
+# dict_ = {k:len(v) if k % 2 == 0 else len(v) ** 3 for k,v in dict_.items()} 
+# print(dict_)
+
+
+# colors1 = ["red", "orange", "green", "blue", "white"]
+# colors2 = ["black", "yellow", "green", "blue"]
+# resc1=[] 
+# resc2=[] 
+# for i in colors1: 
+    # if not i in colors2: resc1.append(i) 
+# for k in colors2: 
+    # if not k in colors1: resc2.append(k) 
+# print(resc1,resc2)
+
+# def get_string_length(a):
+    # count = 0
+    # for i in a:
+        # count = count + 1
+    # return count  
+# print(get_string_length('hello')) 
+
+
+# def get_type(l,k):
+    # print(f'{type(l)}\n{type(k)}') 
+# get_type(5,'s')
+
+
+
+# string = 'celentano'
+# print(string[-2:])
+
+
+# string = 'python'
+# print(string[::-1])
+
+
+# string = 'now'
+# print(string*4)
+
+# string = 'The quick brown fox jumps over the lazy dog'
+# string1 = string.replace('o', '*')
+# print(string1)
+
+# string = 'now'
+# print(string.upper())
+
+
+# string = 'now'
+# print(string[-1] + string[1:-1] + string[0])
+
+
+# hashtags = '#makers#bootcamp#программирование#it#курсы'
+# hashtags1 = hashtags.lstrip('#').split('#')
+# print(hashtags1)
+
+
+# name = input('Бегимай') 
+# last_name = input('Саткеева') 
+# age = input('22') 
+# city = input('Бишкек') 
+# print('Вас зовут {name} {last_name}, Ваш возрост: {age}, Вы проживаете в городе {city}')
+
+# string = 'makers bootcamp'
+# print(string[1:-1:2])
+
+
+# string = 'abracadabra' 
+# res = string[:5] + "K" + string[6:11] 
+# print(res)
+
+# string = 'hELLO wORLD'
+# print(string.swapcase())
+
+# string = 'hello world\n'
+# print(string*3)
+
+
+# string = 'new'
+# print(string.count('e'))
+# 
+# string = 'hello'
+# print(string.find('e'))
+
+
+# string = 'python is the best'
+# print(string.startswith('Python'))
+
+
+# string = 'hello world'
+# print(string.split())
+
+# string1 = "America"
+# string2 = "Japan"
+# print(string1[:1] + string2[:1] + string1[int(len(string1)/2)] + string2[int(len(string2)/2)] + string1[-1] + string2[-1])
+
+
+# string = " Как прекрасен этот мир! " 
+# string1 = string.replace("o", "e", 2) print(string1)# print(f'{res}\n{len(res)}')
+
+# string = 'cow loves good milk'
+# string1 = string.replace("o", "e", 2) 
+# print(string1)
+
+
+# word = str('word')
+# print(word)
+
+# number = 5
+# string = '5'
+# result = number * string
+# print(result)
+
+# x = 5
+# pow = x ** 3
+# print(pow)
+
+# x = int(5)
+# y = int(2)
+# pow = (x % y)
+# print(pow)
+
+# y = 6
+# print(pow(y, 2, 5))
+
+
+# from math import sqrt 
+# leg_a = 3 
+# leg_b = 4 
+# hypotenuse = sqrt(leg_a ** 2 + leg_b ** 2) 
+# print(hypotenuse)
+
+
+# radius = 25
+# from math import pi
+# s = pi * (radius**2)
+# print(s)
+
+
+# first = int(1)
+# second = int(2)
+# third = int(3)
+# first, third, second = second, first, third
+# print("first =", second)
+# print("third =", first)
+# print("second =", third)
+
+
+# num = 56
+# per = num * 4
+# s = num ** 2
+# print(per, s)
+
+
+# lenght = int(2)
+# height = int(3)
+# per = (lenght + height) *2
+# s = lenght * height
+# print(per, s)
+# 
+# length = 2 
+# height = 3 
+# p = (length+height)*2 
+# s = length*height 
+# print(p,s)
+
+
+# radius = 5
+# pi = 3.14
+# p = 2*pi*radius
+# s = pi*(radius**2)
+# print(p,s)
+
+# temp = 80.5 
+# c = (5*(temp - 32))/9 
+# print(round(c, 2))
+
+
+# t = 255 
+# kg = t * 1000 
+# c = t * 10 
+# g = kg * 1000 
+# print(g, kg , c)
+
+
+# list_ = ['sun', 'flowers', 'rumor', 'stranger', 'adventure', 'architect', 'accompany', 'abandon', 'cartoon']
+# letter = input("Enter the first letter of the word you're looking for: ") 
+# matching_words = [] 
+# for word in list_: 
+    # if word.startswith(letter): 
+        # matching_words.append(word) 
+# print(matching_words)
+
+
+# list_ = [1,2,3,4,5,6,7,8,9,0]
+# step = 2
+# element = 'A'
+# for x in list_:
+    # if step < len(list_):
+        # list_.insert(step,element)
+# step = step + 4
+# print(list_)
+
+
+# a = [set(), set(), set()] 
+# inp1 = input() 
+# inp2 = int(input()) 
+# i = 0 
+# if inp2 > 3: 
+    # for set_ in a: 
+        # a[i].add('default value') 
+        # i += 1 
+# else: 
+    # a[inp2-1].add(inp1) 
+# for set_ in a: 
+    # if len(a[i]) == 0: a[i].add('default value') 
+    # i += 1 
+    # print(a)
+    
+    
+# a = [set(),set(),set()]
+# inp1 = input()
+# inp2 = input()
+# if inp2 == 1:
+    # a[inp2 - 1].update([inp1]) 
+    # a[inp2].update(['default value'])
+# elif inp2 == 1:
+    # a[inp2 - 1].update([inp1]) 
+    # a [inp2 - 2].update(['default value']) 
+    # a[inp2].update(['default value'])
+# elif inp2 == 3:
+    # a[inp2 - 1].update([inp1]) 
+    # a[inp2 - 3].update(['default value']) 
+    # a[inp2 - 2].update(['default value']) 
+# else: 
+    # a[0].update(['default value']) 
+    # a[1].update(['default value']) 
+    # a[2].update(['default value']) 
+# print(a)
+
+# a = [set(), set(), set()] 
+# inp1 = input() 
+# inp2 = int(input()) 
+# i = 0 
+# if inp2 > 3: 
+    # for set_ in a: 
+        # a[i].add('default value') 
+        # i += 1 
+# else: 
+    # a[inp2-1].add(inp1) 
+# for set_ in a: 
+    # if len(a[i]) == 0: 
+        # a[i].add('default value') 
+    # i += 1 
+# print(a)
+
+
+# mark = 92
+# if mark >= 90:
+    # print('Отлично, Ваша оценка 5!')
+# elif mark >= 80:
+    # print('Здорово, Ваша оценка 4!')
+# elif mark >= 70:
+    # print('Хорошо, Ваша оценка 3!')
+# elif mark >= 60:
+    # print('Вам стоит подучить материал')
+# else:
+    # print('Вы не сдали экзамен')
+    
+# number = int(input())
+# if number < 0:
+    # print('negative')
+# elif number > 0:
+    # print('positive')
+# elif number == 0:
+    # print('zero')
+    
+
+# x = 42 
+# y = 24 
+# if x > y: 
+    # print(y) 
+# elif x < y: 
+    # print(x)
+    
+# x = 1
+# y = 2
+# z = 3
+# if x < y and y < z:
+    # print(x)
+# elif x<y and y<z:
+    # print(z)
+# elif x<y and z>y:
+    # print(y)
+    
+# x = 1 
+# y = 2 
+# z = 3 
+# if x < y and x< z: 
+    # print(x) 
+# elif y < x and y < z: 
+    # print(y) 
+# else: 
+    # print(z)
+    
+# string = '123456'
+# if int(string[0]) + int(string[1]) + int(string[2]) == int(string[3]) + int(string[4]) + int(string[5]):
+    # print('да')
+# else:
+    # print('нет')
+    
+# age = int(input())
+# if age < 18:
+    # print('Доступ запрещен')
+# else:
+    # print('Добро пожаловать')
+
+# month=int(input()) 
+# if month>12: 
+    # print("Такого месяца нет") 
+# elif month<=12 and month==12 or month==1 or month==2: 
+    # print("зима") 
+# elif month<=12 and month==3 or month==4 or month==5: 
+    # print("весна") 
+# elif month<=12 and month==6 or month==7 or month==8: 
+    # print("лето") 
+# elif month<=12 and month==9 or month==10 or month==11: 
+    # print("осень")
+    
+# a = str(input())
+# if a.isdigit():
+    # print('is digit') 
+# elif a.isalpha():
+    # print('is alpha')
+# else:
+    # print('is ASCII')
+    
+    
+# a = [set(), set(), set()] 
+# inp1 = input() 
+# inp2 = int(input()) 
+# i = 0 
+# if inp2 > 3: 
+    # for set_ in a: 
+        # a[i].add('default value') 
+        # i += 1 
+# else: 
+    # a[inp2-1].add(inp1)
+    # for set_ in a: 
+        # if len(a[i]) == 0: a[i].add('default value') 
+        # i += 1 
+# print(a)
+
+# try: 
+    # num1 = int(input()) 
+    # num2 = int(input()) 
+    # res = num1 / num2 
+# except ZeroDivisionError: 
+    # print('На ноль делить нельзя') 
+# else: 
+    # print(res)
+    
+try: 
+    num1 = int(input()) 
+    num2 = int(input()) 
+    print(num1 + num2) 
+except ValueError: 
+    print('Введите число!')
